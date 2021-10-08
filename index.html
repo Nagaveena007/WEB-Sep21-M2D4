@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 
+<div class="container">
+<div class="row">
+<div class="col-12 col-sm-6 py-4"> 
+<span class="mx=1"> New Member:</span>  
 
 
-    <span >
-      <label for="name">Name</label>
-      <input type="number" id="name" placeholder="Enter a Name of a person">
-      <button onclick="add()" id="addName" > AddName</button>
+  <input type="text" id="name" placeholder="Enter a Name of a person">
+  <button class="btn btn-primary" onclick="add()" id="addName" > AddName</button>
+</div>
+<div class="col-12 col-sm-6 py-4"> 
+ <span class="mx=1">Number of Teams:</span> 
+  
+    <input type="number" id="teams" placeholder="Enter a Name of a person">
+    <button class="btn btn-primary" onclick="teams()" id="btnTeams" > createTeams</button>
+  </div>
+</div>
+</div>
 
-    </span>
-    <br>
-    <span>
-        <label for="Team">Teams</label>
-        <input type="text" id="teams" placeholder="Enter a number of teams">
-        <button onclick="teams()" id="btnTeams" > createTeams</button>
-
-    </span>
-
+  
 
 
 <ul id="listOfNames">
