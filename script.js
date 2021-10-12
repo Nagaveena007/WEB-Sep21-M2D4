@@ -13,4 +13,30 @@
        listOfNames.appendChild(listItem)
     }
 
- 
+
+
+
+
+ function createTeams(){
+    let numberOfTeams=document.getElementById("teams")
+    let teamN = numberOfTeams.value
+    listOfNumbers(teamN)
+ }
+
+ const listOfNumbers=function(number){
+    let teamsRow=document.getElementById("teams-row")
+
+    for(let i=0;i<number.value;i++){
+       teamsRow.innerHTML+=`
+   <div class="col-3">
+      <h4>Team${i+1}</h4>
+       <ul class="list-group-item">
+        </ul>
+     </div>
+   `
+    }
+ }
+
+ window.onload=function(){
+    createTeams()
+     }
